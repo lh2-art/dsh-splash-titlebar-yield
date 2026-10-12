@@ -1,0 +1,53 @@
+{
+  "name": "dsh-splash-titlebar-yield",
+  "version": "1.0.0",
+  "description": "启动动画优化 — Let DSH startup animations cover the Windows native caption buttons: the 40px titlebar area goes to the splash itself and restores when playback ends.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek-harness-desktop",
+    "startup",
+    "splash",
+    "boot-animation",
+    "titlebar",
+    "titlebar-overlay",
+    "electron",
+    "windows"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "license": "MIT",
+  "author": "lh2-art",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lh2-art/dsh-splash-titlebar-yield.git"
+  },
+  "homepage": "https://github.com/lh2-art/dsh-splash-titlebar-yield#readme",
+  "bugs": {
+    "url": "https://github.com/lh2-art/dsh-splash-titlebar-yield/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

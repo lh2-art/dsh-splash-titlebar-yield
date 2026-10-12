@@ -1,0 +1,11 @@
+# dsh-splash-titlebar-yield — DSH bundle patch
+#
+# 纯客户端插件：Host 半边只占位（lib/index.js），真正的逻辑在浏览器半边
+# （lib/client.js）。浏览器半侧由 package.json 的 dsh.client 声明，宿主会自动
+# 组装，不需要在这里写。
+#
+# 注册 id 必须与 loader entry 名一致，否则 ModuleLoader 会报
+# "loaded without registering dsh-splash-titlebar-yield"。
+- insert:
+    - id: dsh-splash-titlebar-yield
+      name: dsh-splash-titlebar-yield
